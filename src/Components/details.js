@@ -1,16 +1,25 @@
 import React from "react";
-// import { useEffect, useState } from "react";
-// import axios from "axios";
+import styled from 'styled-components'
 
 
-export default function Details(props) {
-  const { data } = props
+const StyledDiv = styled.div`
+    p{
+      
+    }
+    font-style: ${pr => pr.italic ? 'italic' : 'initial'};
+    &:hover{
+      color: white;
+    }
+`
+
+export default function Details({ data, italic }) {
+  // const { data, italic } = props
 
   return (
-    <div className='container'>
+    <StyledDiv italic={italic}>
       <h2>{data.title}</h2>
       <p>{data.explanation}</p>
-    </div>
+    </StyledDiv>
 )  
 
 }

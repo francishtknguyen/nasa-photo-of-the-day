@@ -4,6 +4,12 @@ import styled from 'styled-components'
 const StyledDiv = styled.div`
     background: #2F4F4F;
     padding : 5px;
+    &:hover{
+        color: #340000;
+        transform: scale(1.1);
+        transition: all 2s ease-in-out;
+    }
+    
 `
 
 export default function Header(props) {
