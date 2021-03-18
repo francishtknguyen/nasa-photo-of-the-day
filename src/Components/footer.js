@@ -1,17 +1,22 @@
 import React from "react";
-// import { useEffect, useState } from "react";
-// import axios from "axios";
+import styled from 'styled-components'
 
+
+const StyledDiv = styled.div`
+    background: black;
+    color: white;
+    padding:1px;
+`
 
 export default function Footer(props) {
     const { data } = props
   
     return(
-        <div className='container'>
+        <StyledDiv>
           <footer>
               <p>Copyright: {data.copyright}</p>
           </footer>
-        </div>
+        </StyledDiv>
     )
 
 }

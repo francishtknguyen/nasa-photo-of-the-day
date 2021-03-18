@@ -1,15 +1,19 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import styled from 'styled-components'
+
+const StyledDiv = styled.div`
+    background: #2F4F4F;
+    padding : 5px;
+`
 
 export default function Header(props) {
     const { date } = props
     
     return(
-        <div className='container'>
+        <StyledDiv>
             <h1>Astronomy Photo of the Day</h1>
             <div>Date : {date}   </div>
-        </div>
+        </StyledDiv>
     )
 
 }
