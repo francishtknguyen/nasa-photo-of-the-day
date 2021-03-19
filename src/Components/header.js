@@ -18,7 +18,7 @@ export default function Header(props) {
     return(
         <StyledDiv>
             <h1>Astronomy Photo of the Day</h1>
-            <div>Date : {date}   </div>
+            <div>Date : {date.date}   </div>
         </StyledDiv>
     )
 

@@ -92,7 +92,7 @@ return (
   {/* your normal JSX here */}
 );
 ```
-pull
+
 - Read through the API docs carefully. You will read through many technical docs as a developer, so start now to try and understand them.
 
 ### Task 3: Stretch
